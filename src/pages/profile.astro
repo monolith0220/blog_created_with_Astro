@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "PROFILE";
+
+const identity = {
+	firstName: "Akihiro",
+	lastName: "Tokumaru",
+};
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<h1>{pageTitle}</h1>
+	<p>Astroのテスト</p>
+
+	<h2>プロフィール</h2>
+	<dl>
+		<dt>名前</dt>
+		<dd>{identity.firstName} {identity.lastName}</dd>
+	</dl>
+</BaseLayout>
